@@ -5,10 +5,10 @@ from random import choice
 def seed_powers():
     print("🦸‍♀ Seeding powers...")
     powers = [
-        Power(name="Flight", description="Ability to fly"),
-        Power(name="Super Strength", description="Enhanced strength"),
-        Power(name="Telekinesis", description="Move objects with the mind"),
-        # Add more powers as needed
+        Power(name="The Wasp", description="Ability to fly"),
+        Power(name="Captain America", description="Enhanced strength"),
+        Power(name="Superboy", description="Move objects with the mind"),
+    
     ]
 
     db.session.add_all(powers)
@@ -21,7 +21,7 @@ def seed_heroes():
         Hero(name="Superman", super_name="Clark Kent"),
         Hero(name="Wonder Woman", super_name="Diana Prince"),
         Hero(name="Spider-Man", super_name="Peter Parker"),
-        # Add more heroes as needed
+        
     ]
 
     db.session.add_all(heroes)
