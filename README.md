@@ -40,8 +40,7 @@ This project involves creating a Flask API for a superheroes application, with a
 
 ### Testing
 
-- Use `pytest -x` to run the included tests and check the implementation.
-- Alternatively, interact with the API through the frontend or Postman to test functionality.
+- Alternatively, interact with the API through the frontend.
 
 ## Models and Relationships
 
@@ -74,20 +73,12 @@ Returns a list of powers with their IDs, names, and descriptions.
 
 Returns details of a specific power if it exists. Otherwise, returns an error message with an appropriate HTTP status code.
 
-### PATCH `/powers/:id`
-
-Updates an existing power's description if the power exists and the new description passes validations. Returns the updated power or an error message as appropriate.
-
 ### POST `/hero_powers`
 
 Creates a new association between a hero and a power with specified strength. Returns details of the associated hero if successful, or an error message if not.
 
-## Deployment
-
-This project is set up for local development. For deployment, configure the Flask app for production with a WSGI server like Gunicorn and serve the React app from a static file server or integrate with Flask.
-
 ## Testing and Development
 
-The project includes tests for backend functionality. During development, use these tests, the React frontend, or tools like Postman to interact with and test the API. 
+The project includes tests for backend functionality. During development, use these tests, the React frontend, and test the API. 
 
 Remember, the focus is on completing the Flask API according to the specifications; the React frontend is provided for testing purposes and does not require modifications.
